@@ -1,5 +1,5 @@
 # Instincts generated from https://github.com/pythontime/chatgpt-for-data-analytics-bootcamp
-# Generated: 2026-03-18T18:27:21.014Z
+# Generated: 2026-03-18T18:28:01.032Z
 # Version: 2.0
 
 ---
@@ -15,12 +15,12 @@ source_repo: https://github.com/pythontime/chatgpt-for-data-analytics-bootcamp
 
 ## Action
 
-Keep commit messages concise (under 50 characters)
+Write moderate-length commit messages (~50 characters)
 
 ## Evidence
 
-- Average commit message length: 43 chars
-- Based on 107 commits
+- Average commit message length: 50 chars
+- Based on 121 commits
 
 ---
 id: chatgpt-for-data-analytics-bootcamp-naming-files
@@ -103,75 +103,81 @@ Follow the feature-development workflow:
 ## Evidence
 
 - Workflow detected from commit patterns
-- Frequency: ~20x per month
+- Frequency: ~25x per month
 - Files: 
 
 ---
-id: chatgpt-for-data-analytics-bootcamp-workflow-ecc-bundle-addition
-trigger: "when doing ecc bundle addition"
-confidence: 0.9
+id: chatgpt-for-data-analytics-bootcamp-workflow-add-ecc-bundle
+trigger: "when doing add ecc bundle"
+confidence: 0.65
 domain: workflow
 source: repo-analysis
 source_repo: https://github.com/pythontime/chatgpt-for-data-analytics-bootcamp
 ---
 
-# Chatgpt For Data Analytics Bootcamp Workflow Ecc Bundle Addition
+# Chatgpt For Data Analytics Bootcamp Workflow Add Ecc Bundle
 
 ## Action
 
-Follow the ecc-bundle-addition workflow:
-1. Add or update one or more files in .claude/commands/, .claude/homunculus/instincts/inherited/, .codex/agents/, .codex/, .claude/skills/, .agents/skills/ directories.
-2. Commit with 'feat: add chatgpt-for-data-analytics-bootcamp ECC bundle ...' message.
+Follow the add-ecc-bundle workflow:
+1. Add or update .claude/commands/*.md files for command documentation.
+2. Add or update .claude/homunculus/instincts/inherited/*.yaml for instincts configuration.
+3. Add or update .codex/agents/*.toml for agent configuration.
+4. Add or update .codex/AGENTS.md and .codex/config.toml for agent documentation and config.
+5. Add or update .claude/identity.json for identity information.
+6. Add or update .agents/skills/*/agents/*.yaml for agent skill configuration.
+7. Add or update .agents/skills/*/SKILL.md and .claude/skills/*/SKILL.md for skill documentation.
+8. Add or update .claude/ecc-tools.json for ECC tool registry.
 
 ## Evidence
 
 - Workflow detected from commit patterns
-- Frequency: ~10x per month
+- Frequency: ~3x per month
 - Files: .claude/commands/*.md, .claude/homunculus/instincts/inherited/*.yaml, .codex/agents/*.toml
 
 ---
-id: chatgpt-for-data-analytics-bootcamp-workflow-readme-update
-trigger: "when doing readme update"
-confidence: 0.8
-domain: workflow
-source: repo-analysis
-source_repo: https://github.com/pythontime/chatgpt-for-data-analytics-bootcamp
----
-
-# Chatgpt For Data Analytics Bootcamp Workflow Readme Update
-
-## Action
-
-Follow the readme-update workflow:
-1. Edit the readme.md file in the corresponding day folder (e.g., day 1/readme.md, day 2/readme.md).
-2. Commit with 'Update readme.md' message.
-
-## Evidence
-
-- Workflow detected from commit patterns
-- Frequency: ~6x per month
-- Files: day 1/readme.md, day 2/readme.md
-
----
-id: chatgpt-for-data-analytics-bootcamp-workflow-gpt-config-md-lifecycle
-trigger: "when doing gpt config md lifecycle"
+id: chatgpt-for-data-analytics-bootcamp-workflow-update-readme-per-day
+trigger: "when doing update readme per day"
 confidence: 0.75
 domain: workflow
 source: repo-analysis
 source_repo: https://github.com/pythontime/chatgpt-for-data-analytics-bootcamp
 ---
 
-# Chatgpt For Data Analytics Bootcamp Workflow Gpt Config Md Lifecycle
+# Chatgpt For Data Analytics Bootcamp Workflow Update Readme Per Day
 
 ## Action
 
-Follow the gpt-config-md-lifecycle workflow:
-1. Create, update, or delete a markdown file in day 1/gpt-configs/ with a name pattern like NN_description_gpt.md.
-2. Commit with a message indicating the action (Create, Update, Delete) and the file.
+Follow the update-readme-per-day workflow:
+1. Edit day N/readme.md with new content or corrections.
+2. Commit the change with a message like 'Update readme.md'.
 
 ## Evidence
 
 - Workflow detected from commit patterns
 - Frequency: ~5x per month
+- Files: day 1/readme.md, day 2/readme.md
+
+---
+id: chatgpt-for-data-analytics-bootcamp-workflow-update-gpt-config-or-delete
+trigger: "when doing update gpt config or delete"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/pythontime/chatgpt-for-data-analytics-bootcamp
+---
+
+# Chatgpt For Data Analytics Bootcamp Workflow Update Gpt Config Or Delete
+
+## Action
+
+Follow the update-gpt-config-or-delete workflow:
+1. Edit or delete the relevant markdown file in day N/gpt-configs/.
+2. Commit the change with a descriptive message.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
 - Files: day 1/gpt-configs/*.md
 
