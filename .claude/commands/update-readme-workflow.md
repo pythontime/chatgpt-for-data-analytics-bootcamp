@@ -10,7 +10,7 @@ Use this workflow when working on **update-readme-workflow** in `chatgpt-for-dat
 
 ## Goal
 
-Routine updates to the readme.md files for different days to reflect documentation changes or progress.
+Routine updates to the readme.md file for a specific day, likely to document progress, instructions, or results.
 
 ## Common Files
 
@@ -26,8 +26,8 @@ Routine updates to the readme.md files for different days to reflect documentati
 
 ## Typical Commit Signals
 
-- Edit the relevant readme.md file under the appropriate day directory
-- Commit the changes with a message like 'Update readme.md'
+- Edit the relevant day X/readme.md file with new information.
+- Commit the changes with a message like 'Update readme.md'.
 
 ## Notes
 

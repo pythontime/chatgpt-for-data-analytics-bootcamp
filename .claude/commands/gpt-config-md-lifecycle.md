@@ -10,7 +10,7 @@ Use this workflow when working on **gpt-config-md-lifecycle** in `chatgpt-for-da
 
 ## Goal
 
-Creation, update, and deletion of GPT configuration markdown files for various analytics tasks.
+Creation, update, and deletion of GPT configuration markdown files for various data analytics tasks.
 
 ## Common Files
 
@@ -25,8 +25,8 @@ Creation, update, and deletion of GPT configuration markdown files for various a
 
 ## Typical Commit Signals
 
-- Create, update, or delete a markdown file in day 1/gpt-configs/
-- Commit the change with an appropriate message (Create, Update, or Delete)
+- Create, update, or delete a markdown file in day X/gpt-configs/.
+- Commit the change with a descriptive message (e.g., 'Create', 'Update', or 'Delete' <file>).
 
 ## Notes
 

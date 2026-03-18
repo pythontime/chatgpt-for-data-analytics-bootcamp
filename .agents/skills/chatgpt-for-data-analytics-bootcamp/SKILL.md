@@ -31,9 +31,13 @@ Follow these commit message conventions based on 8 analyzed commits.
 
 ### Commit Style: Free-form Messages
 
+### Prefixes Used
+
+- `feat`
+
 ### Message Guidelines
 
-- Average message length: ~23 characters
+- Average message length: ~35 characters
 - Keep first line concise and descriptive
 - Use imperative mood ("Add feature" not "Added feature")
 
@@ -41,49 +45,49 @@ Follow these commit message conventions based on 8 analyzed commits.
 *Commit message example*
 
 ```text
-Update readme.md
+feat: add chatgpt-for-data-analytics-bootcamp ECC bundle (.claude/commands/gpt-config-md-lifecycle.md)
 ```
 
 *Commit message example*
 
 ```text
-Update 08_forecasting_gpt.md
+feat: add chatgpt-for-data-analytics-bootcamp ECC bundle (.claude/commands/feature-development.md)
 ```
 
 *Commit message example*
 
 ```text
-Delete day 1/gpt-configs/07_forecasting-gpt.md
+feat: add chatgpt-for-data-analytics-bootcamp ECC bundle (.codex/agents/docs-researcher.toml)
 ```
 
 *Commit message example*
 
 ```text
-Create 08_forecasting_gpt.md
+feat: add chatgpt-for-data-analytics-bootcamp ECC bundle (.codex/agents/reviewer.toml)
 ```
 
 *Commit message example*
 
 ```text
-Delete day 1/artifacts/invoices_with_b2b_b2c.csv
+feat: add chatgpt-for-data-analytics-bootcamp ECC bundle (.codex/agents/explorer.toml)
 ```
 
 *Commit message example*
 
 ```text
-Add files via upload
+feat: add chatgpt-for-data-analytics-bootcamp ECC bundle (.codex/AGENTS.md)
 ```
 
 *Commit message example*
 
 ```text
-Update 07_advanced_data_analysis_gpt.md
+feat: add chatgpt-for-data-analytics-bootcamp ECC bundle (.codex/config.toml)
 ```
 
 *Commit message example*
 
 ```text
-Create 07_advanced_data_analysis_gpt.md
+feat: add chatgpt-for-data-analytics-bootcamp ECC bundle (.claude/identity.json)
 ```
 
 ## Architecture
@@ -123,7 +127,7 @@ These workflows were detected from analyzing commit patterns.
 
 Standard feature implementation workflow
 
-**Frequency**: ~5 times per month
+**Frequency**: ~13 times per month
 
 **Steps**:
 1. Add feature implementation
@@ -133,19 +137,19 @@ Standard feature implementation workflow
 **Example commit sequence**:
 ```
 Add files via upload
-upload
-Update readme.md
+Delete data/customer_quarterly_tidy (2).csv
+Add files via upload
 ```
 
 ### Update Readme Workflow
 
-Routine updates to the readme.md files for different days to reflect documentation changes or progress.
+Routine updates to the readme.md file for a specific day, likely to document progress, instructions, or results.
 
-**Frequency**: ~4 times per month
+**Frequency**: ~6 times per month
 
 **Steps**:
-1. Edit the relevant readme.md file under the appropriate day directory
-2. Commit the changes with a message like 'Update readme.md'
+1. Edit the relevant day X/readme.md file with new information.
+2. Commit the changes with a message like 'Update readme.md'.
 
 **Files typically involved**:
 - `day 1/readme.md`
@@ -153,38 +157,38 @@ Routine updates to the readme.md files for different days to reflect documentati
 
 **Example commit sequence**:
 ```
-Edit the relevant readme.md file under the appropriate day directory
-Commit the changes with a message like 'Update readme.md'
+Edit the relevant day X/readme.md file with new information.
+Commit the changes with a message like 'Update readme.md'.
 ```
 
 ### Gpt Config Md Lifecycle
 
-Creation, update, and deletion of GPT configuration markdown files for various analytics tasks.
+Creation, update, and deletion of GPT configuration markdown files for various data analytics tasks.
 
-**Frequency**: ~3 times per month
+**Frequency**: ~10 times per month
 
 **Steps**:
-1. Create, update, or delete a markdown file in day 1/gpt-configs/
-2. Commit the change with an appropriate message (Create, Update, or Delete)
+1. Create, update, or delete a markdown file in day X/gpt-configs/.
+2. Commit the change with a descriptive message (e.g., 'Create', 'Update', or 'Delete' <file>).
 
 **Files typically involved**:
 - `day 1/gpt-configs/*.md`
 
 **Example commit sequence**:
 ```
-Create, update, or delete a markdown file in day 1/gpt-configs/
-Commit the change with an appropriate message (Create, Update, or Delete)
+Create, update, or delete a markdown file in day X/gpt-configs/.
+Commit the change with a descriptive message (e.g., 'Create', 'Update', or 'Delete' <file>).
 ```
 
-### Data Artifact Refresh
+### Artifact Data File Lifecycle
 
-Adding, updating, or deleting data artifact files (CSVs, scripts) in preparation for exercises or lessons.
+Adding, updating, or deleting data artifact files (CSVs, scripts) used for bootcamp exercises.
 
-**Frequency**: ~2 times per month
+**Frequency**: ~8 times per month
 
 **Steps**:
-1. Add, update, or delete a data artifact file (CSV, XLSX, or script) in the data or day 1/artifacts/ directory
-2. Commit the change with a message indicating the action
+1. Add, update, or delete files in data/ or day X/artifacts/.
+2. Commit the change with a message indicating the action (e.g., 'Add files via upload', 'Delete <file>').
 
 **Files typically involved**:
 - `data/*.csv`
@@ -194,8 +198,8 @@ Adding, updating, or deleting data artifact files (CSVs, scripts) in preparation
 
 **Example commit sequence**:
 ```
-Add, update, or delete a data artifact file (CSV, XLSX, or script) in the data or day 1/artifacts/ directory
-Commit the change with a message indicating the action
+Add, update, or delete files in data/ or day X/artifacts/.
+Commit the change with a message indicating the action (e.g., 'Add files via upload', 'Delete <file>').
 ```
 
 
