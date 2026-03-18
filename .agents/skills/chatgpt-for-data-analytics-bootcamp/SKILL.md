@@ -37,7 +37,7 @@ Follow these commit message conventions based on 8 analyzed commits.
 
 ### Message Guidelines
 
-- Average message length: ~35 characters
+- Average message length: ~43 characters
 - Keep first line concise and descriptive
 - Use imperative mood ("Add feature" not "Added feature")
 
@@ -127,7 +127,7 @@ These workflows were detected from analyzing commit patterns.
 
 Standard feature implementation workflow
 
-**Frequency**: ~13 times per month
+**Frequency**: ~20 times per month
 
 **Steps**:
 1. Add feature implementation
@@ -137,19 +137,47 @@ Standard feature implementation workflow
 **Example commit sequence**:
 ```
 Add files via upload
-Delete data/customer_quarterly_tidy (2).csv
 Add files via upload
+Create 06_data_quality_gpt.md
 ```
 
-### Update Readme Workflow
+### Ecc Bundle Addition
 
-Routine updates to the readme.md file for a specific day, likely to document progress, instructions, or results.
+Adds or updates ECC (Extensible Command/Config) bundle files for chatgpt-for-data-analytics-bootcamp, including commands, skills, agent configs, and tool definitions.
+
+**Frequency**: ~10 times per month
+
+**Steps**:
+1. Add or update one or more files in .claude/commands/, .claude/homunculus/instincts/inherited/, .codex/agents/, .codex/, .claude/skills/, .agents/skills/ directories.
+2. Commit with 'feat: add chatgpt-for-data-analytics-bootcamp ECC bundle ...' message.
+
+**Files typically involved**:
+- `.claude/commands/*.md`
+- `.claude/homunculus/instincts/inherited/*.yaml`
+- `.codex/agents/*.toml`
+- `.codex/AGENTS.md`
+- `.codex/config.toml`
+- `.claude/identity.json`
+- `.claude/skills/chatgpt-for-data-analytics-bootcamp/SKILL.md`
+- `.agents/skills/chatgpt-for-data-analytics-bootcamp/SKILL.md`
+- `.agents/skills/chatgpt-for-data-analytics-bootcamp/agents/openai.yaml`
+- `.claude/ecc-tools.json`
+
+**Example commit sequence**:
+```
+Add or update one or more files in .claude/commands/, .claude/homunculus/instincts/inherited/, .codex/agents/, .codex/, .claude/skills/, .agents/skills/ directories.
+Commit with 'feat: add chatgpt-for-data-analytics-bootcamp ECC bundle ...' message.
+```
+
+### Readme Update
+
+Updates the readme.md file for a specific day in the bootcamp, likely to reflect new content, corrections, or progress.
 
 **Frequency**: ~6 times per month
 
 **Steps**:
-1. Edit the relevant day X/readme.md file with new information.
-2. Commit the changes with a message like 'Update readme.md'.
+1. Edit the readme.md file in the corresponding day folder (e.g., day 1/readme.md, day 2/readme.md).
+2. Commit with 'Update readme.md' message.
 
 **Files typically involved**:
 - `day 1/readme.md`
@@ -157,49 +185,27 @@ Routine updates to the readme.md file for a specific day, likely to document pro
 
 **Example commit sequence**:
 ```
-Edit the relevant day X/readme.md file with new information.
-Commit the changes with a message like 'Update readme.md'.
+Edit the readme.md file in the corresponding day folder (e.g., day 1/readme.md, day 2/readme.md).
+Commit with 'Update readme.md' message.
 ```
 
 ### Gpt Config Md Lifecycle
 
-Creation, update, and deletion of GPT configuration markdown files for various data analytics tasks.
+Creates, updates, or deletes GPT configuration markdown files for various exercises or modules within the bootcamp.
 
-**Frequency**: ~10 times per month
+**Frequency**: ~5 times per month
 
 **Steps**:
-1. Create, update, or delete a markdown file in day X/gpt-configs/.
-2. Commit the change with a descriptive message (e.g., 'Create', 'Update', or 'Delete' <file>).
+1. Create, update, or delete a markdown file in day 1/gpt-configs/ with a name pattern like NN_description_gpt.md.
+2. Commit with a message indicating the action (Create, Update, Delete) and the file.
 
 **Files typically involved**:
 - `day 1/gpt-configs/*.md`
 
 **Example commit sequence**:
 ```
-Create, update, or delete a markdown file in day X/gpt-configs/.
-Commit the change with a descriptive message (e.g., 'Create', 'Update', or 'Delete' <file>).
-```
-
-### Artifact Data File Lifecycle
-
-Adding, updating, or deleting data artifact files (CSVs, scripts) used for bootcamp exercises.
-
-**Frequency**: ~8 times per month
-
-**Steps**:
-1. Add, update, or delete files in data/ or day X/artifacts/.
-2. Commit the change with a message indicating the action (e.g., 'Add files via upload', 'Delete <file>').
-
-**Files typically involved**:
-- `data/*.csv`
-- `data/*.xlsx`
-- `day 1/artifacts/*.csv`
-- `day 1/artifacts/*.py`
-
-**Example commit sequence**:
-```
-Add, update, or delete files in data/ or day X/artifacts/.
-Commit the change with a message indicating the action (e.g., 'Add files via upload', 'Delete <file>').
+Create, update, or delete a markdown file in day 1/gpt-configs/ with a name pattern like NN_description_gpt.md.
+Commit with a message indicating the action (Create, Update, Delete) and the file.
 ```
 
 
