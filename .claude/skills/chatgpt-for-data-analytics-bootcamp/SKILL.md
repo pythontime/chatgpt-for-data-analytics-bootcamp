@@ -1,6 +1,6 @@
 ---
 name: chatgpt-for-data-analytics-bootcamp-conventions
-description: Development conventions and patterns for chatgpt-for-data-analytics-bootcamp. Python project with freeform commits.
+description: Development conventions and patterns for chatgpt-for-data-analytics-bootcamp. Python project with mixed commits.
 ---
 
 # Chatgpt For Data Analytics Bootcamp Conventions
@@ -29,7 +29,7 @@ Activate this skill when:
 
 Follow these commit message conventions based on 8 analyzed commits.
 
-### Commit Style: Free-form Messages
+### Commit Style: Mixed Style
 
 ### Prefixes Used
 
@@ -37,7 +37,7 @@ Follow these commit message conventions based on 8 analyzed commits.
 
 ### Message Guidelines
 
-- Average message length: ~43 characters
+- Average message length: ~50 characters
 - Keep first line concise and descriptive
 - Use imperative mood ("Add feature" not "Added feature")
 
@@ -45,7 +45,13 @@ Follow these commit message conventions based on 8 analyzed commits.
 *Commit message example*
 
 ```text
-feat: add chatgpt-for-data-analytics-bootcamp ECC bundle (.claude/commands/gpt-config-md-lifecycle.md)
+feat: add chatgpt-for-data-analytics-bootcamp ECC bundle (.claude/commands/readme-update.md)
+```
+
+*Commit message example*
+
+```text
+feat: add chatgpt-for-data-analytics-bootcamp ECC bundle (.claude/commands/ecc-bundle-addition.md)
 ```
 
 *Commit message example*
@@ -82,12 +88,6 @@ feat: add chatgpt-for-data-analytics-bootcamp ECC bundle (.codex/AGENTS.md)
 
 ```text
 feat: add chatgpt-for-data-analytics-bootcamp ECC bundle (.codex/config.toml)
-```
-
-*Commit message example*
-
-```text
-feat: add chatgpt-for-data-analytics-bootcamp ECC bundle (.claude/identity.json)
 ```
 
 ## Architecture
@@ -127,7 +127,7 @@ These workflows were detected from analyzing commit patterns.
 
 Standard feature implementation workflow
 
-**Frequency**: ~20 times per month
+**Frequency**: ~25 times per month
 
 **Steps**:
 1. Add feature implementation
@@ -136,20 +136,26 @@ Standard feature implementation workflow
 
 **Example commit sequence**:
 ```
-Add files via upload
-Add files via upload
-Create 06_data_quality_gpt.md
+feat: add chatgpt-for-data-analytics-bootcamp ECC bundle (.claude/ecc-tools.json)
+feat: add chatgpt-for-data-analytics-bootcamp ECC bundle (.claude/skills/chatgpt-for-data-analytics-bootcamp/SKILL.md)
+feat: add chatgpt-for-data-analytics-bootcamp ECC bundle (.agents/skills/chatgpt-for-data-analytics-bootcamp/SKILL.md)
 ```
 
-### Ecc Bundle Addition
+### Add Ecc Bundle
 
-Adds or updates ECC (Extensible Command/Config) bundle files for chatgpt-for-data-analytics-bootcamp, including commands, skills, agent configs, and tool definitions.
+Adds a new ECC (Extensible Command Collection) bundle for chatgpt-for-data-analytics-bootcamp, including commands, skills, agent configs, and documentation.
 
-**Frequency**: ~10 times per month
+**Frequency**: ~3 times per month
 
 **Steps**:
-1. Add or update one or more files in .claude/commands/, .claude/homunculus/instincts/inherited/, .codex/agents/, .codex/, .claude/skills/, .agents/skills/ directories.
-2. Commit with 'feat: add chatgpt-for-data-analytics-bootcamp ECC bundle ...' message.
+1. Add or update .claude/commands/*.md files for command documentation.
+2. Add or update .claude/homunculus/instincts/inherited/*.yaml for instincts configuration.
+3. Add or update .codex/agents/*.toml for agent configuration.
+4. Add or update .codex/AGENTS.md and .codex/config.toml for agent documentation and config.
+5. Add or update .claude/identity.json for identity information.
+6. Add or update .agents/skills/*/agents/*.yaml for agent skill configuration.
+7. Add or update .agents/skills/*/SKILL.md and .claude/skills/*/SKILL.md for skill documentation.
+8. Add or update .claude/ecc-tools.json for ECC tool registry.
 
 **Files typically involved**:
 - `.claude/commands/*.md`
@@ -158,26 +164,32 @@ Adds or updates ECC (Extensible Command/Config) bundle files for chatgpt-for-dat
 - `.codex/AGENTS.md`
 - `.codex/config.toml`
 - `.claude/identity.json`
-- `.claude/skills/chatgpt-for-data-analytics-bootcamp/SKILL.md`
-- `.agents/skills/chatgpt-for-data-analytics-bootcamp/SKILL.md`
-- `.agents/skills/chatgpt-for-data-analytics-bootcamp/agents/openai.yaml`
+- `.agents/skills/*/agents/*.yaml`
+- `.agents/skills/*/SKILL.md`
+- `.claude/skills/*/SKILL.md`
 - `.claude/ecc-tools.json`
 
 **Example commit sequence**:
 ```
-Add or update one or more files in .claude/commands/, .claude/homunculus/instincts/inherited/, .codex/agents/, .codex/, .claude/skills/, .agents/skills/ directories.
-Commit with 'feat: add chatgpt-for-data-analytics-bootcamp ECC bundle ...' message.
+Add or update .claude/commands/*.md files for command documentation.
+Add or update .claude/homunculus/instincts/inherited/*.yaml for instincts configuration.
+Add or update .codex/agents/*.toml for agent configuration.
+Add or update .codex/AGENTS.md and .codex/config.toml for agent documentation and config.
+Add or update .claude/identity.json for identity information.
+Add or update .agents/skills/*/agents/*.yaml for agent skill configuration.
+Add or update .agents/skills/*/SKILL.md and .claude/skills/*/SKILL.md for skill documentation.
+Add or update .claude/ecc-tools.json for ECC tool registry.
 ```
 
-### Readme Update
+### Update Readme Per Day
 
 Updates the readme.md file for a specific day in the bootcamp, likely to reflect new content, corrections, or progress.
 
-**Frequency**: ~6 times per month
+**Frequency**: ~5 times per month
 
 **Steps**:
-1. Edit the readme.md file in the corresponding day folder (e.g., day 1/readme.md, day 2/readme.md).
-2. Commit with 'Update readme.md' message.
+1. Edit day N/readme.md with new content or corrections.
+2. Commit the change with a message like 'Update readme.md'.
 
 **Files typically involved**:
 - `day 1/readme.md`
@@ -185,27 +197,27 @@ Updates the readme.md file for a specific day in the bootcamp, likely to reflect
 
 **Example commit sequence**:
 ```
-Edit the readme.md file in the corresponding day folder (e.g., day 1/readme.md, day 2/readme.md).
-Commit with 'Update readme.md' message.
+Edit day N/readme.md with new content or corrections.
+Commit the change with a message like 'Update readme.md'.
 ```
 
-### Gpt Config Md Lifecycle
+### Update Gpt Config Or Delete
 
-Creates, updates, or deletes GPT configuration markdown files for various exercises or modules within the bootcamp.
+Updates or deletes a GPT configuration markdown file for a specific lesson or module.
 
-**Frequency**: ~5 times per month
+**Frequency**: ~2 times per month
 
 **Steps**:
-1. Create, update, or delete a markdown file in day 1/gpt-configs/ with a name pattern like NN_description_gpt.md.
-2. Commit with a message indicating the action (Create, Update, Delete) and the file.
+1. Edit or delete the relevant markdown file in day N/gpt-configs/.
+2. Commit the change with a descriptive message.
 
 **Files typically involved**:
 - `day 1/gpt-configs/*.md`
 
 **Example commit sequence**:
 ```
-Create, update, or delete a markdown file in day 1/gpt-configs/ with a name pattern like NN_description_gpt.md.
-Commit with a message indicating the action (Create, Update, Delete) and the file.
+Edit or delete the relevant markdown file in day N/gpt-configs/.
+Commit the change with a descriptive message.
 ```
 
 
