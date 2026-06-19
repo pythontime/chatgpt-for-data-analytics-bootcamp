@@ -1,0 +1,177 @@
+# Instincts generated from https://github.com/pythontime/chatgpt-for-data-analytics-bootcamp
+# Generated: 2026-03-18T18:26:02.220Z
+# Version: 2.0
+
+---
+id: chatgpt-for-data-analytics-bootcamp-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/pythontime/chatgpt-for-data-analytics-bootcamp
+---
+
+# Chatgpt For Data Analytics Bootcamp Commit Length
+
+## Action
+
+Keep commit messages concise (under 50 characters)
+
+## Evidence
+
+- Average commit message length: 23 chars
+- Based on 79 commits
+
+---
+id: chatgpt-for-data-analytics-bootcamp-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/pythontime/chatgpt-for-data-analytics-bootcamp
+---
+
+# Chatgpt For Data Analytics Bootcamp Naming Files
+
+## Action
+
+Use snake_case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: snake_case
+
+---
+id: chatgpt-for-data-analytics-bootcamp-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/pythontime/chatgpt-for-data-analytics-bootcamp
+---
+
+# Chatgpt For Data Analytics Bootcamp Export Style
+
+## Action
+
+Prefer mixed exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: mixed
+
+---
+id: chatgpt-for-data-analytics-bootcamp-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/pythontime/chatgpt-for-data-analytics-bootcamp
+---
+
+# Chatgpt For Data Analytics Bootcamp Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: chatgpt-for-data-analytics-bootcamp-workflow-feature-development
+trigger: "when implementing a new feature"
+confidence: 0.75
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/pythontime/chatgpt-for-data-analytics-bootcamp
+---
+
+# Chatgpt For Data Analytics Bootcamp Workflow Feature Development
+
+## Action
+
+Follow the feature-development workflow:
+1. Add feature implementation
+2. Add tests for feature
+3. Update documentation
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~5x per month
+- Files: 
+
+---
+id: chatgpt-for-data-analytics-bootcamp-workflow-update-readme-workflow
+trigger: "when doing update readme workflow"
+confidence: 0.7
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/pythontime/chatgpt-for-data-analytics-bootcamp
+---
+
+# Chatgpt For Data Analytics Bootcamp Workflow Update Readme Workflow
+
+## Action
+
+Follow the update-readme-workflow workflow:
+1. Edit the relevant readme.md file under the appropriate day directory
+2. Commit the changes with a message like 'Update readme.md'
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~4x per month
+- Files: day 1/readme.md, day 2/readme.md
+
+---
+id: chatgpt-for-data-analytics-bootcamp-workflow-gpt-config-md-lifecycle
+trigger: "when doing gpt config md lifecycle"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/pythontime/chatgpt-for-data-analytics-bootcamp
+---
+
+# Chatgpt For Data Analytics Bootcamp Workflow Gpt Config Md Lifecycle
+
+## Action
+
+Follow the gpt-config-md-lifecycle workflow:
+1. Create, update, or delete a markdown file in day 1/gpt-configs/
+2. Commit the change with an appropriate message (Create, Update, or Delete)
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: day 1/gpt-configs/*.md
+
+---
+id: chatgpt-for-data-analytics-bootcamp-workflow-data-artifact-refresh
+trigger: "when doing data artifact refresh"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/pythontime/chatgpt-for-data-analytics-bootcamp
+---
+
+# Chatgpt For Data Analytics Bootcamp Workflow Data Artifact Refresh
+
+## Action
+
+Follow the data-artifact-refresh workflow:
+1. Add, update, or delete a data artifact file (CSV, XLSX, or script) in the data or day 1/artifacts/ directory
+2. Commit the change with a message indicating the action
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: data/*.csv, data/*.xlsx, day 1/artifacts/*.csv
+
